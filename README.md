@@ -21,6 +21,7 @@ Reproduce results on Needle-in-the-Haystack:
 
 python examples/needle_test/needle_test.py \
     --model_name gradientai/Llama-3-8B-Instruct-Gradient-1048k \
+    --attn_type "index" \ # index for TidalDecode; quest for Quest; None for full weight
     --max_length 10000 \
     --min_length 2000 \
     --rounds 1 \
@@ -44,6 +45,7 @@ budget=4096
 
 nohup python -u examples/ppl/run_ppl.py \
     --model_name_or_path $MODELPATH \
+    --attn_type "index" \ # index for TidalDecode; quest for Quest; None for full weight
     --output_dir $OUTPUT_DIR \
     --num_eval_tokens 32000 \
     --correction_layer 9 \
