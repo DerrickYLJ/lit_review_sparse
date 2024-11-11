@@ -9,7 +9,7 @@ pip install transformers==4.44.0 accelerate datasets evaluate wandb scikit-learn
 python setup.py develop
 ```
 
-Run example on Needle-in-the-Haystack:
+Reproduce results on Needle-in-the-Haystack:
 
 ```
 ### models:
@@ -33,7 +33,7 @@ python examples/needle_test/needle_test.py \
     --jobs 14-15
 ```
 
-Run example on Needle-in-the-Haystack:
+Reproduce results on Perplexity:
 
 ```
 MODELPATH=gradientai/Llama-3-8B-Instruct-Gradient-1048k
